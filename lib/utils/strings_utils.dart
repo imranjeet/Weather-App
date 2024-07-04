@@ -1,0 +1,61 @@
+ String mapIconToAsset(String iconCode) {
+  switch (iconCode) {
+    case '01d':
+    case '01n':
+      return 'sunny';
+    case '02d':
+    case '02n':
+      return 'partlycloudy';
+    case '03d':
+    case '03n':
+      return 'cloud';
+    case '04d':
+    case '04n':
+      return 'heavycloudy';
+    case '09d':
+    case '09n':
+      return 'moderaterain';
+    case '10d':
+    case '10n':
+      return 'lightrain';
+    case '11d':
+    case '11n':
+      return 'thunderyoutbreakspossible';
+    case '13d':
+    case '13n':
+      return 'snow';
+    case '50d':
+    case '50n':
+      return 'mist';
+    case 'heavycloudy':
+      return 'heavycloudy';
+    case 'heavyrain':
+      return 'heavyrain';
+    case 'humidity':
+      return 'humidity';
+    case 'lightdrizzle':
+      return 'lightdrizzle';
+    case 'lightrainshower':
+      return 'lightrainshower';
+    case 'moderateorheavyrainshower':
+      return 'moderateorheavyrainshower';
+    case 'moderateorheavyrainwiththunder':
+      return 'moderateorheavyrainwiththunder';
+    case 'moderaterainattimes':
+      return 'moderaterainattimes';
+    case 'overcast':
+      return 'overcast';
+    case 'patchylightdrizzle':
+      return 'patchylightdrizzle';
+    case 'patchylightrain':
+      return 'patchylightrain';
+    case 'patchylightrainwiththunder':
+      return 'patchylightrainwiththunder';
+    case 'patchyrainpossible':
+      return 'patchyrainpossible';
+    case 'windspeed':
+      return 'windspeed';
+    default:
+      return 'clear';
+  }
+}
